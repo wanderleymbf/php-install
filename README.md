@@ -4,6 +4,6 @@ com os seguintes comandos
 
 ``` shell
 sudo mysql
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost'; FLUSH PRIVILEGES;
+GRANT ALL PRIVILEGES ON *.* TO 'phpmyadmin'@'localhost'; FLUSH PRIVILEGES;
 
 ```
