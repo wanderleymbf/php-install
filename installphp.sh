@@ -10,6 +10,9 @@ sudo apt-get update
 sudo apt install php-xml
 sudo apt-get install php-mbstring
 
+sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+sudo a2enconf phpmyadmin.conf
+sudo systemctl reload apache2.service
 
 EXPECTED_CHECKSUM="$(php -r 'copy("https://composer.github.io/installer.sig", "php://stdout");')"
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
